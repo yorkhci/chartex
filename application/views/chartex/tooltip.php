@@ -1,4 +1,11 @@
 <?php
+////////////////////////////////////////////////////////
+//TOOLTIP
+//RECEIVES THE DATA ABOUT A DOCUMENT
+//CREATES A TOOLTIP
+//INCLUDES A TRUNCATE FUNCTION TO SNIP THE TEXT 
+////////////////////////////////////////////////////////
+
 	//A handy little function to truncate text to a desired number of characters but not cut a word in half.
 	function truncate($text, $chars = 25) {
 		$text = $text." ";

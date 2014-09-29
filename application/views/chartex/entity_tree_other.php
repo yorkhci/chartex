@@ -1,4 +1,10 @@
 <?php
+////////////////////////////////////////////////////////
+//ENTITY_TREE_OTHER
+//RECEIVES DATA ABOUT AN OTHER ENTITY (NOT PERSON OR SITE)
+//GENERATES JSTREE DATA VISUALISATION
+////////////////////////////////////////////////////////
+
 	if(isset($sameas_entities[0])){
 		$title = $sameas_entities[0]['entity_type_name'].' '.$dm_entity_id;
 	}

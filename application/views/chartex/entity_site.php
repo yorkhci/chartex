@@ -1,4 +1,10 @@
 <?php
+////////////////////////////////////////////////////////
+//ENTITY_SITE
+//RECEIVES DATA ABOUT A SITE ENTITY
+//GENERATES HTML NESTED LISTS
+////////////////////////////////////////////////////////
+
 	if(isset($sameas_entities[0])){
 		$title = $sameas_entities[0]['entity_type_name'].' '.$dm_entity_id;
 	} else{

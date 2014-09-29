@@ -1,3 +1,9 @@
+<!--////////////////////////////////////////////////////
+//ENTITY VIEWER
+//CREATES A HEADING, CLOSE BUTTON AND BASIC FRAME
+//FOR THE ENTITY VIEWER CONTENTS
+/////////////////////////////////////////////////////-->
+
 <div id="entity_viewer">
 <button id="remEntTabs">Close All Entities</button>
 <?php
