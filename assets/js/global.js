@@ -1,5 +1,5 @@
 //Edit this to reflect the domain directory structure
-var js_base_url = 'http://'+ window.location.host+'/mywork/chartex/';
+var js_base_url = 'http://'+ window.location.host+'/chartex/';
 
 //Array of document json data.
 var document_json = {};

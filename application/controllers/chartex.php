@@ -105,10 +105,12 @@ class Chartex extends CI_Controller {
 		$this->load->helper('HTML');
 		
 		//Passes various details about the entity from the URI.
-		//For some reason, the segments are 2, 3 and 4 when uploaded to the yorkhci.org webspace.	
-		$data['entity_type_name'] = $this->uri->segment(3);
-		$data['dm_entity_id'] = $this->uri->segment(4);
-		$data['entity_id'] = $this->uri->segment(5);
+		//You may have to adjust these.
+		//For localhost, these were 3, 4, and 5.
+		//When uploaded to webspace, they 2, 3 and 4.	
+		$data['entity_type_name'] = $this->uri->segment(2);
+		$data['dm_entity_id'] = $this->uri->segment(3);
+		$data['entity_id'] = $this->uri->segment(4);
 		
 		//Different options for different entity types.
 		if ($data['entity_type_name'] == "Person"){		
