@@ -1,4 +1,10 @@
 <?php
+////////////////////////////////////////////////////////
+//RESULTS
+//RECEIVES THE RESULTS OF A DOCUMENTS SEARCH
+//GENERATES THE DOCUMENTS RESULTS TABLE
+////////////////////////////////////////////////////////
+
 if (!$results) {
 	echo '<p class="results_statement">Your search for "<strong>'.$search_form_query.'</strong>" returned no ' .$search_type.'.</p>'; 
 } else {

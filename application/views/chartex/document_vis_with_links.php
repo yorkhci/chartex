@@ -1,7 +1,11 @@
 <?php
-//////////////////////////////////////
+////////////////////////////////////////////////////////
 //DOCUMENT VISUALISATION
-//////////////////////////////////////
+//RECEIVES THE DATA FOR THE DOCUMENT VISUALISATION
+//ENCODES IT IN JSON
+//PREPARES THE STRUCTURE FOR THE DOCUMENT VISUALISATION
+//NOT CURRENTLY USED
+////////////////////////////////////////////////////////
 	
 	echo heading('Transactions Visualisation', 3);
 	echo '<p>Below is a visualisation of the transactions that are described in this document:</p>';

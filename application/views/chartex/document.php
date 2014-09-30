@@ -1,4 +1,10 @@
 <?php
+////////////////////////////////////////////////////////
+//DOCUMENT
+//RECEIVES DATA ABOUT A DOCUMENT
+//GENERATES DOCUMENT TEXT WITH HIGHLIGHTING
+////////////////////////////////////////////////////////
+
 	$title = $entities[0]['document_name'].' <span>('.$entities[0]['collection_name'].')';
 	echo heading($title, 2);
 	echo heading('Document Text', 3);

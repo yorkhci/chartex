@@ -1,4 +1,10 @@
-<?php header("Content-Type: text/html; charset=utf-8"); ?>
+<?php header("Content-Type: text/html; charset=utf-8"); 
+////////////////////////////////////////////////////////
+//HEADER
+//HTML HEADER
+//INCLUDES CSS AND JS FILES AND THE HEADING ELEMENTS
+////////////////////////////////////////////////////////
+?>
 <!DOCTYPE html> 
 <head>
 	<title>ChartEx Virtual Workbench v1.3</title>
@@ -12,10 +18,9 @@
 	<script src="<?=asset_url()?>js/jquery-1.10.1.min.js" type="text/javascript"></script>
     <script src="<?=asset_url()?>js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
 	<script src="<?=asset_url()?>js/tablesorter/jquery.tablesorter.js" type="text/javascript"></script>
-    <script src="<?=asset_url()?>js/tablesorter/addons/pager/jquery.tablesorter.pager.js" type="text/javascript" ></script>
+    <script src="<?=asset_url()?>js/tablesorter/addons/pager/jquery.tablesorter.pager.js" type="text/javascript"></script>
 	<script src="<?=asset_url()?>js/tree.jquery.js" type="text/javascript"></script>
     <script src="<?=asset_url()?>js/jit.js" type="text/javascript"></script>
-    <!--<script src="<?=asset_url()?>js/ui.tabs.paging.js" type="text/javascript"></script>-->
 	
 	<script src="<?=asset_url()?>js/global.js" type="text/javascript"></script>
 	<script src="<?=asset_url()?>js/document.js" type="text/javascript"></script>

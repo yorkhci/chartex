@@ -1,4 +1,11 @@
 <?php
+////////////////////////////////////////////////////////
+//RESULTS
+//RECEIVES THE RESULTS OF A SEARCH
+//GENERATES THE RESULTS TABLE
+//NOT CURRENTLY USED
+////////////////////////////////////////////////////////
+
 echo '<p class="results_statement">Your search for "<strong>'.$search_form_query.'</strong>" returned the following '.$search_type.':</p>'; 
 $this->load->library('table');
 

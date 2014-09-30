@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/mywork/';
+$config['base_url']	= 'http://example.com/';
 
 $config['asset_path'] = 'assets/';
 

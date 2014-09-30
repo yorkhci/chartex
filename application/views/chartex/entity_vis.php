@@ -1,4 +1,10 @@
 <?php
+////////////////////////////////////////////////////////
+//ENTITY_VIS
+//RECEIVES DATA ABOUT AN ENTITY
+//GENERATES JIT DATA VISUALISATION
+////////////////////////////////////////////////////////
+
 	if(isset($sameas_entities[0])){
 		$title = $sameas_entities[0]['entity_type_name'].' '.$dm_entity_id;
 	}

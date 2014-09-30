@@ -1,12 +1,12 @@
 //Edit this to reflect the domain directory structure
-var js_base_url = 'http://'+ window.location.host+'/mywork/chartex/';
+var js_base_url = 'http://'+ window.location.host+'/chartex/';
 
 //Array of document json data.
 var document_json = {};
 //Array of document graphs.
 var document_graphs = {};
 
-//Array of entity definitely and maybe json data for the trees.
+//Array of entity 'definitely' and 'maybe' json data for the trees.
 var entity_def_json = {};
 var entity_mayb_json = {};
 //Array of entity trees.
@@ -18,6 +18,8 @@ var entity_json = {};
 var entity_graphs = {};
 
 $(document).ready(function() {
+	
+	//AJAX search functionality
 	//When the search query form is submitted...
 	$('#search_form').submit(function(){	
 		//First of all, reveal the search results container (hidden for neatness) 	
@@ -50,6 +52,7 @@ $(document).ready(function() {
 		return false;
 	});	
 	
+	//Select All checkbox functionality
 	//For the 'Select All' checkbox, find the nearby checkboxes either check or uncheck them, trigger the change above.
 	$('.checkall').on('click', function () {
 		if($(this).is(':checked')) {
@@ -62,6 +65,27 @@ $(document).ready(function() {
 			});
 		}
 	});	
+	
+	//HIde/show LEGEND functionality
+	//Make the legends clickable and the contents expandable
+	//NOT currently used because it wasn't very obvious
+	/*$("#advanced_fieldset > legend").click(function () {
+        var $this = $(this);
+        var parent = $this.parent();
+        var contents = parent.contents().not(this);
+        if (contents.length > 0) {
+            $this.data("contents", contents.detach());
+			$this.text("Entities included in search:");
+        } else {
+            $this.data("contents").appendTo(parent);
+			$this.text("Entities included in search:");
+        }
+    });
+	$("#advanced_fieldset > legend").click();*/
+	
+	//HELP functionality
+	//Displays a tooltip with help information.
+	//NOT currently used because it was very easy to trigger it with mouse over
 	
 	/*$(".help_tooltip_1").each(function(){		
 		$(this).tooltip({
@@ -150,21 +174,6 @@ $(document).ready(function() {
       			return false;
     		});
 	});*/
-	
-	//Make the legends clickable and the contents expandable
-	/*$("#advanced_fieldset > legend").click(function () {
-        var $this = $(this);
-        var parent = $this.parent();
-        var contents = parent.contents().not(this);
-        if (contents.length > 0) {
-            $this.data("contents", contents.detach());
-			$this.text("Entities included in search:");
-        } else {
-            $this.data("contents").appendTo(parent);
-			$this.text("Entities included in search:");
-        }
-    });
-	$("#advanced_fieldset > legend").click();*/
 });         
 
 //Documents results table enhancements (striping, sorting, pagination, tab callers etc.)

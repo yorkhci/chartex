@@ -38,18 +38,18 @@
 |
 */
 
-$route['chartex/results'] = 'chartex/results';
-$route['chartex/results/(:any)'] = 'chartex/results/$1';
-$route['chartex/document'] = 'chartex/document';
-$route['chartex/document/(:any)'] = 'chartex/document/$1';
-$route['chartex/entity'] = 'chartex/entity';
-$route['chartex/entity/(:any)'] = 'chartex/entity/$1';
-$route['chartex/entity/(:any)/(:any)'] = 'chartex/entity/$1/$2';
-$route['chartex/entity/(:any)/(:any)/(:any)'] = 'chartex/entity/$1/$2/$3';
-$route['chartex/tooltip'] = 'chartex/tooltip';
-$route['chartex/tooltip/(:any)'] = 'chartex/tooltip/$1';
-$route['chartex/help'] = 'chartex/help';
-$route['chartex/help/(:any)'] = 'chartex/help/$1';
+$route['results'] = 'chartex/results';
+$route['results/(:any)'] = 'chartex/results/$1';
+$route['document'] = 'chartex/document';
+$route['document/(:any)'] = 'chartex/document/$1';
+$route['entity'] = 'chartex/entity';
+$route['entity/(:any)'] = 'chartex/entity/$1';
+$route['entity/(:any)/(:any)'] = 'chartex/entity/$1/$2';
+$route['entity/(:any)/(:any)/(:any)'] = 'chartex/entity/$1/$2/$3';
+$route['tooltip'] = 'chartex/tooltip';
+$route['tooltip/(:any)'] = 'chartex/tooltip/$1';
+$route['help'] = 'chartex/help';
+$route['help/(:any)'] = 'chartex/help/$1';
 $route['chartex'] = 'chartex';
 $route['(:any)'] = 'chartex';
 $route['default_controller'] = 'chartex';

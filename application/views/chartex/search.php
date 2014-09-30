@@ -1,5 +1,11 @@
 <div id="search_container">
 <?php
+////////////////////////////////////////////////////////
+//SEARCH
+//RECEIVES THE DATA ABOUT COLLECTIONS AND ENTITIES
+//SETS UP THE VARIOUS SEARCH INPUTS
+////////////////////////////////////////////////////////
+
 //form_open() - Creates opening form tag (with attributes)
 $attributes = array('id' => 'search_form');
 echo form_open('chartex/results/documents', $attributes);
